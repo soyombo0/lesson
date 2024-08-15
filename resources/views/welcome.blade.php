@@ -13,10 +13,14 @@
             <p>Test Task</p>
         </div>
 
-        <button id="button" type="submit" class="">Событие JS</button>
+        <form id="form" method="POST" action="/form">
+            @csrf
+            <button id="button" type="submit" class="">Событие JS</button>
+        </form>
 
-        <p>Напишите на почту <a class="mail" href="mailto:mail@test.com">mail@test.com</a>, чтобы связаться с нами</p>
+        <p>Напишите на почту <a class="mail" href="mailto:timofeev.d@roistat.com">timofeev.d@roistat.com</a>, чтобы связаться с нами</p>
 
+        <a id="number" href="tel:+76662406605">7 (666) 240-66-05</a>
 
         <script>
             (function(w, d, s, h, id) {
