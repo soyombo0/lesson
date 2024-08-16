@@ -5,22 +5,20 @@
         <meta name="viewport" content="width=device-width, initial-scale=1">
 
         <title>Lesson</title>
-
+        <script src="https://cdn.tailwindcss.com"></script>
     </head>
-    <body class="">
+    <body class="bg-gray-900 text-white">
 
-        <div>
-            <p>Test Task</p>
+        <div class="flex items-center justify-center h-screen">
+            <form id="form" method="POST" action="/form">
+                @csrf
+                <button id="button" type="submit" class="rounded-full bg-blue-500 text-white p-2 hover:bg-blue-600">Событие JS</button>
+            </form>
+
+            <p class="p-5">Напишите на почту <a class="mail text-blue-500" href="mailto:timofeev.d@roistat.com">timofeev.d@roistat.com</a>, чтобы связаться с нами</p>
+
+            <a id="number" href="tel:+76662406605" class="text-blue-500">+7 (666) 240-66-05</a>
         </div>
-
-        <form id="form" method="POST" action="/form">
-            @csrf
-            <button id="button" type="submit" class="">Событие JS</button>
-        </form>
-
-        <p>Напишите на почту <a class="mail" href="mailto:timofeev.d@roistat.com">timofeev.d@roistat.com</a>, чтобы связаться с нами</p>
-
-        <a id="number" href="tel:+76662406605">7 (666) 240-66-05</a>
 
         <script>
             (function(w, d, s, h, id) {
